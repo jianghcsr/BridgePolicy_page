@@ -245,29 +245,30 @@
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhaoyang Liu</a>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhaoyang Liu</a><sup>1,2</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Mokai Pan</a>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Mokai Pan</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhongyi Wang</a>,</span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Zhongyi Wang</a><sup>1</sup>,</span>
                     <span class="author-block">
-                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Kaizhen Zhu</a>,</span>
+                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Kaizhen Zhu</a><sup>1</sup>,</span>
                       <span class="author-block">
-                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Haotao Lu</a>,</span>
+                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Haotao Lu</a><sup>1</sup>,</span>
                         <span class="author-block">
-                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Haipeng Zhang</a>,</span>
+                          <a href="SIXTH AUTHOR PERSONAL LINK" target="_blank">Haipeng Zhang</a><sup>1</sup>,</span>
                           <span class="author-block">
-                            <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Jingya Wang</a>,</span>
+                            <a href="SEVENTH AUTHOR PERSONAL LINK" target="_blank">Jingya Wang</a><sup>1</sup>,</span>
                             <span class="author-block">
-                              <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Ye Shi</a><sup>†</sup>,</span>
+                              <a href="EIGHTH AUTHOR PERSONAL LINK" target="_blank">Ye Shi</a><sup>1,2,†</sup>,</span>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block"><sup>1</sup>Shanghaitech University,</span> <sup>2</sup>InstAdapt
+                    <span class="author-block"><sup>1</sup>ShanghaiTech University,</span> <sup>2</sup>InstAdapt
                     <!-- TODO: Remove this line if no equal contribution -->
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                     <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -351,8 +352,8 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Imitation learning with diffusion models has advanced robotic control by capturing the multi-modal action distributions. However, existing methods typically treat observations only as high-level conditions to the denoising network, rather than integrating them into the stochastic dynamics of the diffusion process itself. As a result, the sampling is forced to begin from random noise, weakening the coupling between perception and control and often yielding suboptimal performance. We propose BridgePolicy, a generative visuomotor policy that directly integrates observations into the stochastic dynamics via a diffusion-bridge formulation. By constructing an observation-informed trajectory, BridgePolicy enables sampling to start from a rich and informative prior rather than random noise, substantially improving precision and reliability in control. A key difficulty is that diffusion bridge normally connects distributions of matched dimensionality, while robotic observations are heterogeneous and not naturally aligned with actions. To overcome this, we introduce a semantic aligner to unify the visual and state inputs and align the observations with action representations, making diffusion bridge applicable to heterogeneous robot data. Extensive experiments across 52 simulation tasks on three benchmarks and 5 real-world tasks demonstrate that BridgePolicy consistently outperforms state-of-the-art generative policies. 
+            </p>
         </div>
       </div>
     </div>
